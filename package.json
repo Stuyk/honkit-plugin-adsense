@@ -1,6 +1,6 @@
 {
-    "name": "honkit-plugin-sitemap",
-    "description": "Generate a sitemap for a Honkit",
+    "name": "honkit-plugin-robots",
+    "description": "Generate a robots.txt for a Honkit",
     "main": "index.js",
     "version": "1.0.0",
     "engines": {
