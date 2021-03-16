@@ -2,7 +2,7 @@
     "name": "honkit-plugin-sitemap",
     "description": "Generate a sitemap for a Honkit",
     "main": "index.js",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "engines": {
         "honkit": ">=1.x.x"
     },
