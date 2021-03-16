@@ -1,6 +1,6 @@
 function handleFinishHook() {
     let data = '';
-    const robotsDataList = new URL('/', this.config.get('pluginsConfig.robots.data'));
+    const robotsDataList = this.config.get('pluginsConfig.robots.data');
 
     for (let i = 0; i < robotsDataList.length; i++) {
         data += `${robotsDataList[i]}\r\n`;
