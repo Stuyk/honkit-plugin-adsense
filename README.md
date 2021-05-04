@@ -1,11 +1,11 @@
-# Robots.txt Creator for Honkit
+# Google Adsense for Honkit
 
-Generate a `robots.txt` for your Honkit Documentation. The output sitemap file is `robots.txt` and copied automatically.
+Generate a adsense tag and place an ad at the bottom of your page.
 
 ## Install
 
 ```sh
-npm install honkit-plugin-robots --save-dev
+npm install honkit-plugin-adsense --save-dev
 ```
 
 ## Usage
@@ -14,10 +14,11 @@ Add it to your `book.json` with a basic configuration:
 
 ```json
 {
-    "plugins": ["honkit-plugin-robots"],
+    "plugins": ["honkit-plugin-adsense"],
     "pluginsConfig": {
-        "robots": {
-            "data": ["User-agent: *", "Disallow:"]
+        "adsense": {
+            "client": "client token",
+            "slot": "slot token"
         }
     }
 }
