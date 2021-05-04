@@ -1,24 +1,24 @@
 {
-    "name": "honkit-plugin-robots",
-    "description": "Generate a robots.txt for a Honkit",
+    "name": "honkit-plugin-adsense",
+    "description": "Append a single ad to the end of your file.",
     "main": "index.js",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "engines": {
         "honkit": ">=1.x.x"
     },
-    "homepage": "https://github.com/stuyk/honkit-plugin-robots",
+    "homepage": "https://github.com/stuyk/honkit-plugin-adsense",
     "keywords": [
-        "seo",
-        "robots",
+        "adsense",
+        "google",
         "honkit"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/stuyk/honkit-plugin-robots"
+        "url": "https://github.com/stuyk/honkit-plugin-adsense"
     },
     "license": "Apache-2.0",
     "bugs": {
-        "url": "https://github.com/stuyk/honkit-plugin-robots/issues"
+        "url": "https://github.com/stuyk/honkit-plugin-adsense/issues"
     },
     "prettier": {
         "tabWidth": 4,
@@ -27,10 +27,15 @@
     },
     "honkit": {
         "properties": {
-            "data": {
-                "type": "[]",
+            "client": {
+                "type": "string",
                 "required": true,
-                "title": "A list of data to write down to a robot.txt file. Each array element is a line."
+                "title": "Seen in the tag known as a data-ad-client."
+            },
+            "slot": {
+                "type": "string",
+                "required": true,
+                "title": "Seen in the tag known as a data-ad-slot."
             }
         }
     }
